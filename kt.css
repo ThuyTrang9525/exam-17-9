@@ -1,0 +1,93 @@
+
+/* Style cho các form-group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style cho label */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style cho input */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style cho button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Đặt style cho form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Ẩn phần hiển thị sản phẩm lúc đầu */
+#productInfo {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Hiển thị các thẻ sản phẩm theo hàng ngang */
+#productCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cho phép các thẻ sản phẩm xuống dòng khi không đủ chỗ */
+    gap: 16px; /* Khoảng cách giữa các thẻ sản phẩm */
+    width: 500px;
+}
+
+/* Style cho thẻ sản phẩm */
+.product-card {
+    flex: 1 1 300px; /* Đặt kích thước cơ bản là 300px và cho phép điều chỉnh */
+    max-width: 300px; /* Đảm bảo thẻ không vượt quá 300px */
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thẻ vượt kích thước */
+    margin-bottom: 16px; /* Đảm bảo khoảng cách dưới thẻ sản phẩm */
+}
+
+
+/* Style cho hình ảnh trong thẻ sản phẩm */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style cho các liên kết điều hướng */
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
